@@ -1,0 +1,16 @@
+{
+  "request": {
+    "url": "/author/1",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "id": 1,
+      "name": "Agatha Christie"
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

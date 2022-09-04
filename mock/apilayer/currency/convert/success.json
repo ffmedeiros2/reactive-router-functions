@@ -1,0 +1,29 @@
+{
+  "request": {
+    "url": "/currency_data/convert?from=USD&to=BRL&amount=1",
+    "headers": {
+      "apikey": {
+        "matches": ".*"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "success": true,
+      "query": {
+        "from": "USD",
+        "to": "BRL",
+        "amount": 1
+      },
+      "info": {
+        "timestamp": 1662308883,
+        "quote": 5.17245
+      },
+      "result": 5.17245
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

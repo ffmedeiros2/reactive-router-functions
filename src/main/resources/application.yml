@@ -1,0 +1,11 @@
+api:
+  layer:
+    key: ${API_LAYER_KEY:key}
+    currency:
+      # API Layer URL
+      # url: https://api.apilayer.com/currency_data
+
+      # API Layer Mock URL
+      url: http://localhost:3001/currency_data
+  bookstore:
+    url: http://localhost:3002/

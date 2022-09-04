@@ -1,0 +1,12 @@
+{
+  "request": {
+    "url": "/author/2",
+    "method": "GET"
+  },
+  "response": {
+    "status": 500,
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

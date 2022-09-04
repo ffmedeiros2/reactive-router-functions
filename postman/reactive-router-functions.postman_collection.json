@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "37230289-670d-4b73-a5c5-8b4e796bd53d",
+		"name": "reactive-router-functions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14604707"
+	},
+	"item": [
+		{
+			"name": "API Layer",
+			"item": [
+				{
+					"name": "Convert",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "{{apilayer-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{apilayer-url}}/currency_data/convert?from=USD&to=BRL&amount=1",
+							"host": [
+								"{{apilayer-url}}"
+							],
+							"path": [
+								"currency_data",
+								"convert"
+							],
+							"query": [
+								{
+									"key": "from",
+									"value": "USD"
+								},
+								{
+									"key": "to",
+									"value": "BRL"
+								},
+								{
+									"key": "amount",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "apikey",
+								"value": "{{apilayer-key}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{apilayer-url}}/currency_data/list",
+							"host": [
+								"{{apilayer-url}}"
+							],
+							"path": [
+								"currency_data",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Bookstore",
+			"item": [
+				{
+					"name": "/author/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{bookstore-url}}/author/1",
+							"host": [
+								"{{bookstore-url}}"
+							],
+							"path": [
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/author/{id}/book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{bookstore-url}}/author/1/book",
+							"host": [
+								"{{bookstore-url}}"
+							],
+							"path": [
+								"author",
+								"1",
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ReactiveRouterFunctions",
+			"item": [
+				{
+					"name": "/author/{id}",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{reactive-router-functions-url}}/author/1",
+							"host": [
+								"{{reactive-router-functions-url}}"
+							],
+							"path": [
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/author/{id}/book",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{reactive-router-functions-url}}/author/1/book",
+							"host": [
+								"{{reactive-router-functions-url}}"
+							],
+							"path": [
+								"author",
+								"1",
+								"book"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "apilayer-url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "apilayer-key",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "bookstore-url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "reactive-router-functions-url",
+			"value": ""
+		}
+	]
+}

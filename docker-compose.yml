@@ -1,0 +1,14 @@
+version: "3.9"
+services:
+  wiremock-apilayer:
+    image: wiremock/wiremock
+    ports:
+      - '3001:8080'
+    volumes:
+      - ./mock/apilayer:/home/wiremock/mappings
+  wiremock-bookstore:
+    image: wiremock/wiremock
+    ports:
+      - '3002:8080'
+    volumes:
+      - ./mock/bookstore:/home/wiremock/mappings

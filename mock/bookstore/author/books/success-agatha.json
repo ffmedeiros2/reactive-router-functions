@@ -1,0 +1,60 @@
+{
+  "request": {
+    "url": "/author/1/book",
+    "method": "GET"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": [
+      {
+        "id": 1,
+        "name": "Murder on the Orient Express",
+        "summary": "The elegant train of the 1930s, the Orient Express, is stopped by heavy snowfall. A murder is discovered, and Poirot's trip home to London from the Middle East is interrupted to solve the case. The opening chapters of the novel take place in Istanbul. The rest of the novel takes place in Yugoslavia, with the train trapped between Vinkovci and Brod.",
+        "published": 1934,
+        "pages": 256,
+        "price": {
+          "value": 6.99,
+          "currency": "USD"
+        }
+      },
+      {
+        "id": 2,
+        "name": "The Murder of Roger Ackroyd",
+        "summary": "Poirot retires to a village near the home of a friend, Roger Ackroyd, to pursue a project to perfect vegetable marrows. Soon after, Ackroyd is murdered and Poirot must come out of retirement to solve the case.",
+        "published": 1926,
+        "pages": 312
+      },
+      {
+        "id": 3,
+        "name": "Death on the Nile",
+        "summary": "Set primarily in Egypt on a boat going down the Nile, the novel follows Poirot's attempt to unravel the mystery of a string of murders that disrupted his well-deserved vacation.",
+        "published": 1937,
+        "pages": 288
+      },
+      {
+        "id": 4,
+        "name": "The Murder at the Vicarage",
+        "summary": "Concerns the murder of Colonel Lucius Protheroe, a man so despised that multiple people confess to the crime after the fact. The novel stars the elderly spinster detective Miss Marple in her first of many appearances in Christie's collection of mysteries.",
+        "published": 1930,
+        "pages": 256
+      },
+      {
+        "id": 5,
+        "name": "Partners in Crime",
+        "summary": "This collection of detective short stories has a theme connecting the stories, as well, \"a group of short detective stories within a detective novel.\"",
+        "published": 1929,
+        "pages": 277
+      },
+      {
+        "id": 6,
+        "name": "The A.B.C. Murders",
+        "summary": "The initial premise is that a serial killer is murdering people with alliterative names. The murders follow an alphabetical order, starting with a victim whose initials were A. A. The murders appear to lack a motive, yet Poirot suspects that there was a clear motive behind one of the murders.",
+        "published": 1936,
+        "pages": 256
+      }
+    ],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}
